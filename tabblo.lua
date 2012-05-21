@@ -29,7 +29,7 @@ wget.callbacks.get_urls = function(file, url, is_css, iri)
             link_expect_html=1, link_expect_css=0 }
         )
       end
-      id = string.match(line, "/studio/stories/view/".."/([0-9]+)/")
+      id = string.match(line, "/studio/stories/view/([0-9]+)/")
       if id then
         table.insert(urls, 
           { url="http://www.tabblo.com/studio/stories/view/"..id.."/",
