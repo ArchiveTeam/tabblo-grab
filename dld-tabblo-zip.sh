@@ -74,7 +74,7 @@ fi
 
 for TABBLO_ID in $( seq ${FROM_ID} ${TO_ID} )
 do
-  if [[ -f STOP ]] && [[ $( ./filemtime-helper.sh STOP ) -le $initial_stop_mtime ]]
+  if [[ -f STOP ]] && [[ $( ./filemtime-helper.sh STOP ) -gt $initial_stop_mtime ]]
   then
     exit
   fi
