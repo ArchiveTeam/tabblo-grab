@@ -1,10 +1,6 @@
 wget.callbacks.init = function()
 end
 
-wget.callbacks.download_child_p = function(urlpos, parent, depth, start_url_parsed, iri, verdict)
-  return verdict
-end
-
 wget.callbacks.get_urls = function(file, url, is_css, iri)
   user = string.match(url, "http://www.tabblo.com/studio/person/([^/]+)$")
   if user then
