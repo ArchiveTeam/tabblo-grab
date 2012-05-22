@@ -20,9 +20,9 @@ fi
 
 if builtin type -p pkg-config &>/dev/null
 then
-  if ! pkg-config lua5.1
+  if ! pkg-config lua && ! pkg-config lua5.1
   then
-    echo "You need Lua5.1"
+    echo "You need Lua"
     exit
   fi
 fi
