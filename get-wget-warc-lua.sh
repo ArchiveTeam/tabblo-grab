@@ -27,7 +27,7 @@ then
   fi
 fi
 
-TARFILE=wget-lua-20120522b.tar.gz
+TARFILE=wget-lua-20120523.tar.gz
 TARDIR=wget-UNKNOWN
 
 rm -rf $TARFILE $TARDIR/
